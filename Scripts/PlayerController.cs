@@ -17,8 +17,6 @@ public class PlayerController : MonoBehaviour
 
   void Update()
   {
-
-
     if (Input.GetMouseButtonUp(0))
     {
       // Get world position for the mouse
