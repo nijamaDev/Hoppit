@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-  private Vector2 moveSpeed = new Vector2(300, 700);
+  private Vector2 moveSpeed = new Vector2(350, 1100);
   private float maxDistance = 4;
   private float minDistance = 1;
   Vector2 mousePosition;
