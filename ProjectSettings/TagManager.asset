@@ -51,6 +51,7 @@ TagManager:
   - GameOverPanel
   - bottomNavigationBar
   - UserDataManager
+  - HoppitGround
   layers:
   - Default
   - TransparentFX
