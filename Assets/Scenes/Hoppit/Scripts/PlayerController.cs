@@ -33,7 +33,6 @@ public class PlayerController : MonoBehaviour
       if (direction.y > maxDistance) direction.y = maxDistance;
       if (direction.y < minDistance) direction.y = minDistance;
       rb.AddForce(direction * moveSpeed);
-      Debug.Log(direction);
       if (direction.x < -1)
       {
         ani.SetBool("jumpingLeft", true);

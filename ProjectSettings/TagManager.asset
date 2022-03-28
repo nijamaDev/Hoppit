@@ -52,6 +52,8 @@ TagManager:
   - bottomNavigationBar
   - UserDataManager
   - HoppitGround
+  - Ladder
+  - Platform
   layers:
   - Default
   - TransparentFX
@@ -86,6 +88,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Bg
+    uniqueID: 1297047185
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 3948233109
     locked: 0
