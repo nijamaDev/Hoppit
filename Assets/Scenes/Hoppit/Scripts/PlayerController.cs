@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-  Vector2 moveSpeed = new Vector2(700, 1940);
+  Vector2 moveSpeed = new Vector2(800, 1940);
   float maxDistance = 10;
   float minDistance = 3;
   float wallHitForce = 300f;
