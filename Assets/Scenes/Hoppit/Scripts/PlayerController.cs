@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-  Vector2 moveSpeed = new Vector2(600, 2000);
+  Vector2 moveSpeed = new Vector2(700, 1940);
   float maxDistance = 10;
-  float minDistance = 1;
+  float minDistance = 3;
+  float wallHitForce = 300f;
   Vector2 mousePosition;
   Vector2 direction;
   Rigidbody2D rb;
@@ -36,24 +37,21 @@ public class PlayerController : MonoBehaviour
     {
       if (wallHit(1))
       {
-        rb.AddForce(new Vector2(-100, 0));
+        rb.AddForce(new Vector2(-wallHitForce, 0));
         ani.SetBool("hitRight", true);
         ani.SetBool("hitLeft", false);
-        Debug.Log("hit derecha");
       }
       if (wallHit(-1))
       {
-        rb.AddForce(new Vector2(100, 0));
+        rb.AddForce(new Vector2(wallHitForce, 0));
         ani.SetBool("hitLeft", true);
         ani.SetBool("hitRight", false);
-        Debug.Log("hit izq");
       }
 
     }
   }
   void OnTriggerEnter2D(Collider2D col)
   {
-    Debug.Log(col.transform.tag);
     if (col.transform.tag == "HoppitGround")
     {
       canJump = true;
