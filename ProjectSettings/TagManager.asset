@@ -54,6 +54,10 @@ TagManager:
   - HoppitGround
   - Ladder
   - Platform
+  - Mariposa_blanca
+  - Mariposa
+  - ship
+  - asteroid
   layers:
   - Default
   - TransparentFX
@@ -61,7 +65,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - ground
   - 
   - LineRenderer
   - GameElements
