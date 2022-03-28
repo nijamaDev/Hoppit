@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-  private Vector2 moveSpeed = new Vector2(350, 1100);
-  private float maxDistance = 4;
+  private Vector2 moveSpeed = new Vector2(600, 2000);
+  private float maxDistance = 8;
   private float minDistance = 1;
   Vector2 mousePosition;
   Vector2 direction;
@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
       if (direction.x > maxDistance) direction.x = maxDistance;
       if (direction.y > maxDistance) direction.y = maxDistance;
       if (direction.y < minDistance) direction.y = minDistance;
-      rb.AddForce(direction * moveSpeed);
+      rb.AddForce(direction * 0.5f * moveSpeed);
       if (direction.x < -1)
       {
         ani.SetBool("jumpingLeft", true);
